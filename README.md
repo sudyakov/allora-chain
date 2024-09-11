@@ -15,3 +15,5 @@ The AI/ML agents within the Allora Network use their data and algorithms to broa
 ## Documentation
 
 For the latest documentation, please go to <https://docs.allora.network/>
+
+docker build -t alloranetwork/allora-chain:v0.5.0-docker-upgrade .
