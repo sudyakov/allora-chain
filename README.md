@@ -17,9 +17,13 @@ The AI/ML agents within the Allora Network use their data and algorithms to broa
 For the latest documentation, please go to <https://docs.allora.network/>
 
 nano docker-compose.yaml
+
 docker build -t alloranetwork/allora-chain:v0.5.0-docker-upgrade .
+
 docker compose up -d
+
 docker compose logs -f
 
 docker exec -it allora_validator /bin/bash
+
 allorad keys list
