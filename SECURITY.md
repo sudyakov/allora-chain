@@ -7,10 +7,11 @@ Security researchers are essential in identifying vulnerabilities that may impac
 ### Guidelines for Responsible Vulnerability Testing and Reporting
 
 1. **Refrain from testing vulnerabilities on our publicly accessible environments**, including but not limited to:
-  - Allora mainnet
-  - any Allora-affiliated frontends e.g. allora.network, alloralabs.xyz
-  - Allora public testnets
-  - Allora testnet frontend
+
+- Allora mainnet
+- any Allora-affiliated frontends e.g. allora.network, alloralabs.xyz
+- Allora public testnets
+- Allora testnet frontend
 
 2. **Avoid reporting security vulnerabilities through public channels, including GitHub issues**
 
@@ -64,7 +65,7 @@ During this time:
 
 Though we don't have an official bug bounty program, we generally offer rewards to security researchers who responsibly disclose vulnerabilities to us. Bounties are generally awarded for vulnerabilities classified as **high** or **critical** severity. Bounty amounts will be determined during the disclosure process, after the severity has been assessed. Please note that in order to collect a bounty, the reporter must go through a KYC process.
 
-> [!WARNING] 
+> [!WARNING]
 > Targeting our production environments will disqualify you from receiving any bounty.
 
 ## Feedback on this Policy
