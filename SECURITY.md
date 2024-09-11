@@ -8,12 +8,12 @@ Security researchers are essential in identifying vulnerabilities that may impac
 
 1. **Refrain from testing vulnerabilities on our publicly accessible environments**, including but not limited to:
 
-- Allora mainnet
-- any Allora-affiliated frontends e.g. allora.network, alloralabs.xyz
-- Allora public testnets
-- Allora testnet frontend
+   - Allora mainnet
+   - any Allora-affiliated frontends e.g. allora.network, alloralabs.xyz
+   - Allora public testnets
+   - Allora testnet frontend
 
-2. **Avoid reporting security vulnerabilities through public channels, including GitHub issues**
+1. **Avoid reporting security vulnerabilities through public channels, including GitHub issues**
 
 ## Reporting Security Issues
 
