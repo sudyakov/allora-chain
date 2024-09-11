@@ -43,9 +43,18 @@ if [ ! -f $INIT_FLAG ]; then
     rm -f $GENESIS_FILE
     curl -Lo $GENESIS_FILE $GENESIS_URL
 
-    #* Import allora account, priv_validator_key.json and node_key.json from the vault here
-    #* Here create a new allorad account
-    $BINARY --home $APP_HOME keys add ${MONIKER} --keyring-backend $KEYRING_BACKEND > $APP_HOME/${MONIKER}.account_info 2>&1
+      #* Import allora account, priv_validator_key.json and node_key.json from the vault here
+      if ! $BINARY --home $APP_HOME keys show $WALLET_NAME --keyring-backend $KEYRING_BACKEND &> /dev/null; then
+        if [ "$IMPORT_WALLET" = "true" ]; then
+          echo "Импортируем существующий кошелек"
+          echo "$WALLET_MNEMONIC" | $BINARY --home $APP_HOME keys add $WALLET_NAME --recover --keyring-backend $KEYRING_BACKEND
+        else
+          echo "Создаем новый кошелек"
+          $BINARY --home $APP_HOME keys add $WALLET_NAME --keyring-backend $KEYRING_BACKEND > $APP_HOME/${WALLET_NAME}.account_info 2>&1
+        fi
+      else
+        echo "Кошелек $WALLET_NAME уже существует"
+      fi
 
     #* Adjust configs
     #* Enable prometheus metrics
