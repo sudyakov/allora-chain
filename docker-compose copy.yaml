@@ -12,8 +12,8 @@ services:
       - STATE_SYNC_RPC2=https://allora-rpc.testnet.allora.network:443
       # - UPGRADE=true # set this to true for chain upgrade runs
       - IMPORT_WALLET=false # set this to true to import wallet on start up
-      - WALLET_NAME=allora_validator_wallet
-      - WALLET_MNEMONIC=SEED PHRASE HERE
+      # - WALLET_NAME=allora_validator_wallet
+      # - WALLET_MNEMONIC=SEED PHRASE HERE
     volumes:
       - ./data:/data
       - ./scripts/:/scripts
